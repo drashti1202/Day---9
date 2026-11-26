@@ -1,0 +1,227 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #360b12, #590b18);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #080808, #50000c, #b51228);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 5px solid #e3263e;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 15px;
+    color: #ffd9de;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+/* FORM SECTION */
+.form-section {
+    background: linear-gradient(145deg, #222222, #303030);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #a91b30;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #ff4058;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 13px 0 8px;
+    font-weight: 600;
+    color: #f5cbd0;
+}
+
+/* OVAL INPUT FIELDS */
+input,
+select {
+    padding: 14px 22px;
+    border: 2px solid #7c2735;
+    border-radius: 50px;
+    font-size: 15px;
+    background: #171717;
+    color: white;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff304d;
+    box-shadow: 0 0 12px rgba(255, 30, 65, 0.35);
+    background: #242424;
+}
+
+/* REGISTER BUTTON */
+button {
+    background: linear-gradient(120deg, #790013, #c8102e, #ff304d);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 23px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #e00025, #850016);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 30, 65, 0.3);
+}
+
+/* ERROR MESSAGE */
+#errorMessage {
+    color: #ff697c;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* STATISTICS */
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #171717, #850e22);
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 4px solid #ff304d;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-size: 15px;
+}
+
+.stat-card p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ff5269;
+}
+
+/* EMPLOYEE SECTION */
+.employee-section {
+    background: linear-gradient(145deg, #222222, #303030);
+    padding: 25px;
+    border: 1px solid #a91b30;
+    border-radius: 10px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* EMPLOYEE CARDS */
+.employee-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.employee-card {
+    background: linear-gradient(135deg, #292929, #45101b);
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 5px solid #ed2946;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.employee-card h3 {
+    color: #ff5269;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.employee-card p {
+    margin: 10px 0;
+    color: #f0dadd;
+    font-size: 14px;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: linear-gradient(120deg, #8c0018, #e3263e);
+    padding: 10px 25px;
+    font-size: 14px;
+    width: auto;
+}
+
+.delete-btn:hover {
+    background: #a00019;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-list {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .form-section,
+    .employee-section {
+        padding: 20px;
+    }
+}
